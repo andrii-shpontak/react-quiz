@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-quiz/static/css/main.c28791b4.css",
-    "main.js": "/react-quiz/static/js/main.4077a11a.js",
+    "main.js": "/react-quiz/static/js/main.e412006c.js",
     "static/js/702.53d0d439.chunk.js": "/react-quiz/static/js/702.53d0d439.chunk.js",
     "static/js/155.4eddb698.chunk.js": "/react-quiz/static/js/155.4eddb698.chunk.js",
     "static/js/352.055d8337.chunk.js": "/react-quiz/static/js/352.055d8337.chunk.js",
@@ -18,7 +18,7 @@
     "static/media/closeIcon.svg": "/react-quiz/static/media/closeIcon.311c5816ebeb23cb3419ef2192c08b40.svg",
     "static/media/sidebarIcon.svg": "/react-quiz/static/media/sidebarIcon.c84e21f0b50e34cde75f9d125676bbfc.svg",
     "main.c28791b4.css.map": "/react-quiz/static/css/main.c28791b4.css.map",
-    "main.4077a11a.js.map": "/react-quiz/static/js/main.4077a11a.js.map",
+    "main.e412006c.js.map": "/react-quiz/static/js/main.e412006c.js.map",
     "702.53d0d439.chunk.js.map": "/react-quiz/static/js/702.53d0d439.chunk.js.map",
     "155.4eddb698.chunk.js.map": "/react-quiz/static/js/155.4eddb698.chunk.js.map",
     "352.055d8337.chunk.js.map": "/react-quiz/static/js/352.055d8337.chunk.js.map",
@@ -27,6 +27,6 @@
   },
   "entrypoints": [
     "static/css/main.c28791b4.css",
-    "static/js/main.4077a11a.js"
+    "static/js/main.e412006c.js"
   ]
 }
