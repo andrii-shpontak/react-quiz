@@ -11,7 +11,7 @@ const Header = ({ title }: { title: string }) => {
   }, [setOpen]);
 
   return (
-    <header className='bg-blue-500 py-4 fixed w-full z-10 flex items-center'>
+    <header className='bg-blue-500 py-4 w-full z-10 flex items-center'>
       <div className='flex items-center w-16 ml-4 cursor-pointer' onClick={handleOpenToggle}>
         <SidebarICon className='h-8 w-8' />
       </div>
