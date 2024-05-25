@@ -1,11 +1,18 @@
-import Header from './components/Header';
+import { CreateQuiz, Home, Quizzes } from './pages';
+import { Navigate, Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+
 import React from 'react';
 
 const App: React.FC = () => {
   return (
-    <div className='flex'>
-      <Header />
-    </div>
+    <Router>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/quizzes' element={<Quizzes />} />
+        <Route path='/create-quiz' element={<CreateQuiz />} />
+        <Route path='*' element={<Navigate to='/' />} />
+      </Routes>
+    </Router>
   );
 };
 

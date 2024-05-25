@@ -1,4 +1,6 @@
-import { ReactComponent as CloseIcon } from '../assets/icons/closeIcon.svg';
+import { ReactComponent as CloseIcon } from '../../assets/icons/closeIcon.svg';
+import { Link } from 'react-router-dom';
+import React from 'react';
 
 const Sidebar = ({ onClose }: { onClose: () => void }) => {
   return (
@@ -11,19 +13,19 @@ const Sidebar = ({ onClose }: { onClose: () => void }) => {
           <h2 className='text-xl font-bold mb-4'>Menu</h2>
           <ul>
             <li className='mb-2'>
-              <a href='#' className='block hover:text-blue-500'>
+              <Link to='/' className='block hover:text-blue-500'>
                 Home
-              </a>
+              </Link>
             </li>
             <li className='mb-2'>
-              <a href='#' className='block hover:text-blue-500'>
+              <Link to='/quizzes' className='block hover:text-blue-500'>
                 Quizzes
-              </a>
+              </Link>
             </li>
             <li className='mb-2'>
-              <a href='#' className='block hover:text-blue-500'>
+              <Link to='/create-quiz' className='block hover:text-blue-500'>
                 Create Quiz
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
