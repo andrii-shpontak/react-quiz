@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkreact_quiz=self.webpackChunkreact_quiz||[]).push([[352],{352:(e,s,t)=>{t.r(s),t.d(s,{default:()=>c});var u=t(56),a=(t(43),t(579));const c=()=>(0,a.jsx)("div",{children:(0,a.jsx)(u.Y9,{title:"Quizzes Page"})})}}]);
+//# sourceMappingURL=352.055d8337.chunk.js.map
