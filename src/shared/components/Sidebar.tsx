@@ -1,6 +1,6 @@
 import { ReactComponent as CloseIcon } from '../../assets/icons/closeIcon.svg';
 import { Link } from 'react-router-dom';
-import React from 'react';
+import { pages } from '../constants/pageList';
 
 const Sidebar = ({ onClose }: { onClose: () => void }) => {
   return (
@@ -12,21 +12,14 @@ const Sidebar = ({ onClose }: { onClose: () => void }) => {
         <div className='p-4'>
           <h2 className='text-xl font-bold mb-4'>Menu</h2>
           <ul>
-            <li className='mb-2'>
-              <Link to='/' className='block hover:text-blue-500'>
-                Home
-              </Link>
-            </li>
-            <li className='mb-2'>
-              <Link to='/quizzes' className='block hover:text-blue-500'>
-                Quizzes
-              </Link>
-            </li>
-            <li className='mb-2'>
-              <Link to='/create-quiz' className='block hover:text-blue-500'>
-                Create Quiz
-              </Link>
-            </li>
+            {/* need to close the Sidebar when clicking on the current page */}
+            {pages.map((page, i) => (
+              <li key={i} className='mb-2'>
+                <Link to={page.link} className='block hover:text-blue-500'>
+                  {page.title}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
       </aside>
