@@ -27,6 +27,7 @@ export type QuestionCardProps = {
   questionNumber: number;
   totalQuestions: number;
   onNext: () => void;
+  quizTitle: string;
 };
 
 export type TQuizInProcessProps = { quizInfo: TQuiz };
@@ -42,3 +43,11 @@ export type TTimeRemainingProps = {
 export type THeaderProps = { title: string };
 
 export type TSidebarProps = { onClose: () => void };
+
+export type TAnswer = { questionId: number; answerId: number; correct: boolean };
+
+export type TAnswersObject = {
+  title: string;
+  date: string;
+  answers: TAnswer[];
+};

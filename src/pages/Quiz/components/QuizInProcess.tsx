@@ -28,6 +28,7 @@ const QuizInProcess = ({ quizInfo }: TQuizInProcessProps) => {
             onNext={onNext}
             questionNumber={quizStatus.inProcess}
             totalQuestions={quizInfo.questions.length}
+            quizTitle={quizInfo.title}
           />
         </>
       ) : (

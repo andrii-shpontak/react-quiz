@@ -1,3 +1,3 @@
 export enum LocalStorageKeys {
-  Quiz = 'quiz',
+  Answers = 'answers',
 }
