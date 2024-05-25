@@ -1,9 +1,10 @@
-import React, { useCallback, useState } from 'react';
+import { useCallback, useState } from 'react';
 
 import Sidebar from './Sidebar';
 import { ReactComponent as SidebarICon } from '../../assets/icons/sidebarIcon.svg';
+import type { THeaderProps } from '../types';
 
-const Header = ({ title }: { title: string }) => {
+const Header = ({ title }: THeaderProps) => {
   const [isOpen, setOpen] = useState<boolean>(false);
 
   const handleOpenToggle = useCallback(() => {

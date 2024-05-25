@@ -3,6 +3,9 @@ import type { TQuiz } from '../types';
 export const quizzes: TQuiz[] = [
   {
     title: 'React & TS',
+    timeLimit: 25,
+    difficulty: 'simple',
+    category: 'Frontend',
     questions: [
       {
         id: 1,
@@ -90,7 +93,7 @@ export const quizzes: TQuiz[] = [
       },
       {
         id: 5,
-        text: "What is the output of the following code?\n\n```javascript\nconst name = 'John';\nconst greeting = `Hello, ${name}`;\nconsole.log(greeting);\n```",
+        text: "What is the output of the following code?\n\njavascript\nconst name = 'John';\nconst greeting = `Hello, ${name}`;\nconsole.log(greeting);\n",
 
         options: [
           {
@@ -512,6 +515,9 @@ export const quizzes: TQuiz[] = [
   },
   {
     title: 'Docker & docker-compose',
+    timeLimit: 25,
+    difficulty: 'medium',
+    category: 'Devops',
     questions: [
       {
         id: 1,

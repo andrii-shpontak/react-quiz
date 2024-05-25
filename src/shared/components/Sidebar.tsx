@@ -1,8 +1,9 @@
 import { ReactComponent as CloseIcon } from '../../assets/icons/closeIcon.svg';
 import { Link } from 'react-router-dom';
+import { TSidebarProps } from '../types';
 import { pages } from '../constants/pageList';
 
-const Sidebar = ({ onClose }: { onClose: () => void }) => {
+const Sidebar = ({ onClose }: TSidebarProps) => {
   return (
     <div className='fixed inset-0 z-50 overflow-y-auto'>
       <aside className='bg-gray-800 text-white w-64 h-full fixed left-0 top-0 z-50'>
