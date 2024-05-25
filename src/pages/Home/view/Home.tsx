@@ -18,7 +18,7 @@ const Home: React.FC = () => {
             <div
               key={index}
               className='p-4 border border-gray-300 rounded-md shadow-md transition-colors hover:bg-gray-50'>
-              <Link to={`/quiz/${quiz.title}`} className='block text-blue-500 hover:underline'>
+              <Link to={`/react-quiz/quiz/${quiz.title}`} className='block text-blue-500 hover:underline'>
                 {quiz.title}
               </Link>
             </div>

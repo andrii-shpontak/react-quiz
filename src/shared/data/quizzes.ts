@@ -900,26 +900,6 @@ export const quizzes: TQuiz[] = [
         correct_answers: [1],
       },
       {
-        id: 19,
-        text: 'What is the Docker command to run a container?',
-
-        options: [
-          {
-            id: 1,
-            text: 'docker run',
-          },
-          {
-            id: 2,
-            text: 'docker build',
-          },
-          {
-            id: 3,
-            text: 'docker compose',
-          },
-        ],
-        correct_answers: [1],
-      },
-      {
         id: 20,
         text: "What is the purpose of the 'docker-compose up' command?",
 

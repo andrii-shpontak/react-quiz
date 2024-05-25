@@ -22,6 +22,13 @@ const QuestionCard: React.FC<QuestionCardProps> = ({ question, questionNumber, t
     }
   };
 
+  const handleNextClick = () => {
+    onNext();
+    setSelectedOption(null);
+    setIsConfirmed(false);
+    setIsCorrect(false);
+  };
+
   return (
     <div
       className={`p-6 rounded-lg shadow-md border w-full max-w-xl mx-auto ${
@@ -34,17 +41,25 @@ const QuestionCard: React.FC<QuestionCardProps> = ({ question, questionNumber, t
       <ul>
         {question.options.map(option => (
           <li key={option.id} className='mb-2'>
-            <label className='flex items-center cursor-pointer'>
-              <input
-                type='radio'
-                name={`question-${question.id}`}
-                value={option.id}
-                checked={selectedOption === option.id}
-                onChange={handleOptionChange}
-                className='mr-2'
-                disabled={isConfirmed}
-              />
-              {option.text}
+            <label className='flex items-center cursor-pointer w-full'>
+              <span
+                className={`inline-block flex items-center p-2 border rounded-lg shadow-sm transition-colors ${
+                  selectedOption === option.id ? 'bg-gray-300' : 'bg-gray-100'
+                } ${
+                  isConfirmed ? (selectedOption === option.id ? (isCorrect ? 'bg-green-100' : 'bg-red-100') : '') : ''
+                } hover:bg-gray-200 w-full`}
+                style={{ pointerEvents: isConfirmed ? 'none' : 'auto' }}>
+                <input
+                  type='radio'
+                  name={`question-${question.id}`}
+                  value={option.id}
+                  checked={selectedOption === option.id}
+                  onChange={handleOptionChange}
+                  disabled={isConfirmed}
+                  className='mx-3'
+                />
+                {option.text}
+              </span>
             </label>
           </li>
         ))}
@@ -54,7 +69,7 @@ const QuestionCard: React.FC<QuestionCardProps> = ({ question, questionNumber, t
           Confirm
         </button>
       ) : (
-        <button onClick={onNext} className='bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 mt-4'>
+        <button onClick={handleNextClick} className='bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 mt-4'>
           Next
         </button>
       )}

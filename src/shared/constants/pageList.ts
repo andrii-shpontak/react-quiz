@@ -1,5 +1,5 @@
 export const pages = [
-  { link: '/', title: 'Home' },
-  { link: '/quizzes', title: 'Quizzes' },
-  { link: '/create-quiz', title: 'Create Quiz' },
+  { link: '/react-quiz', title: 'Home' },
+  { link: '/react-quiz/quizzes', title: 'Quizzes' },
+  { link: '/react-quiz/create-quiz', title: 'Create Quiz' },
 ];

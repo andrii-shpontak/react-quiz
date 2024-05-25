@@ -1,5 +1,5 @@
-import { Navigate, Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import React, { Suspense, lazy } from 'react';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 
 import { Loader } from './shared/components';
 
@@ -13,11 +13,11 @@ const LazyRouter: React.FC = () => {
     <Router>
       <Suspense fallback={<Loader />}>
         <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/quiz/:id' element={<Quiz />} />
-          <Route path='/quizzes' element={<Quizzes />} />
-          <Route path='/create-quiz' element={<CreateQuiz />} />
-          <Route path='*' element={<Navigate to='/' />} />
+          <Route path='/react-quiz' element={<Home />} />
+          <Route path='/react-quiz/quiz/:id' element={<Quiz />} />
+          <Route path='/react-quiz/quizzes' element={<Quizzes />} />
+          <Route path='/react-quiz/create-quiz' element={<CreateQuiz />} />
+          <Route path='/react-quiz/*' element={<Home />} />
         </Routes>
       </Suspense>
     </Router>
