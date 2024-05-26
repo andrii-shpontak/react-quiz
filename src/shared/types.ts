@@ -22,12 +22,16 @@ export type TUseQuizzesDataProps = { id?: number };
 
 export type TQuizUseDataProps = { id?: string; data: TQuiz[] };
 
-export type TQuestionCardProps = {
+export type TQuestionCardHandlersProps = {
   question: TQuestion;
   questionNumber: number;
   totalQuestions: number;
   onNext: () => void;
   quizTitle: string;
+};
+
+export type TQuestionCardProps = TQuestionCardHandlersProps & {
+  timeLimit: number;
 };
 
 export type TQuizInProcessProps = { quizInfo: TQuiz };
@@ -36,8 +40,7 @@ export type TQuizPreviewProps = { quizInfo: TQuiz; startQuiz: () => void };
 
 export type TTimeRemainingProps = {
   timeLimit: number;
-  onStart: () => void;
-  onStop: () => void;
+  isFinished: boolean;
 };
 
 export type THeaderProps = { title: string };
@@ -49,5 +52,6 @@ export type TAnswer = { questionId: number; answerId: number; correct: boolean }
 export type TAnswersObject = {
   title: string;
   date: string;
+  elapsedTime: string;
   answers: TAnswer[];
 };

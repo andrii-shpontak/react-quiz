@@ -1,5 +1,7 @@
+import { AbsoluteRoutes } from './AbsoluteRoutes';
+
 export const pages = [
-  { link: '/react-quiz', title: 'Home' },
-  { link: '/react-quiz/quizzes', title: 'Quizzes' },
-  { link: '/react-quiz/create-quiz', title: 'Create Quiz' },
+  { link: AbsoluteRoutes.HOME, title: 'Home' },
+  { link: AbsoluteRoutes.QUIZZES, title: 'Quizzes' },
+  { link: AbsoluteRoutes.CREATE_QUIZ, title: 'Create Quiz' },
 ];
