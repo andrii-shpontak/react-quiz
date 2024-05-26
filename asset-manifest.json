@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/react-quiz/static/css/main.2bf67b78.css",
-    "main.js": "/react-quiz/static/js/main.6b7d1da3.js",
-    "static/js/702.15416bb8.chunk.js": "/react-quiz/static/js/702.15416bb8.chunk.js",
-    "static/js/283.d2ad78fe.chunk.js": "/react-quiz/static/js/283.d2ad78fe.chunk.js",
-    "static/js/352.4d0e8691.chunk.js": "/react-quiz/static/js/352.4d0e8691.chunk.js",
-    "static/js/249.2bd28269.chunk.js": "/react-quiz/static/js/249.2bd28269.chunk.js",
+    "main.css": "/react-quiz/static/css/main.e8ff4586.css",
+    "main.js": "/react-quiz/static/js/main.071f977b.js",
+    "static/js/805.b2df1df2.chunk.js": "/react-quiz/static/js/805.b2df1df2.chunk.js",
+    "static/js/740.bdb8e2c2.chunk.js": "/react-quiz/static/js/740.bdb8e2c2.chunk.js",
+    "static/js/136.43ac6e52.chunk.js": "/react-quiz/static/js/136.43ac6e52.chunk.js",
+    "static/js/369.738d0c33.chunk.js": "/react-quiz/static/js/369.738d0c33.chunk.js",
     "static/js/453.e3426b48.chunk.js": "/react-quiz/static/js/453.e3426b48.chunk.js",
-    "static/js/847.5ac9605e.chunk.js": "/react-quiz/static/js/847.5ac9605e.chunk.js",
+    "static/js/150.2c144c10.chunk.js": "/react-quiz/static/js/150.2c144c10.chunk.js",
     "static/media/Nunito-Black.ttf": "/react-quiz/static/media/Nunito-Black.a1c0bd6a53c9ade726cc.ttf",
     "static/media/Nunito-ExtraBold.ttf": "/react-quiz/static/media/Nunito-ExtraBold.e2978b0fea8c866cb940.ttf",
     "static/media/Nunito-SemiBold.ttf": "/react-quiz/static/media/Nunito-SemiBold.06337b2efe0c0d52bcb6.ttf",
@@ -16,19 +16,20 @@
     "static/media/Nunito-Light.ttf": "/react-quiz/static/media/Nunito-Light.abdadce60604611a970c.ttf",
     "static/media/Nunito-ExtraLight.ttf": "/react-quiz/static/media/Nunito-ExtraLight.79e8b288a1191efd4549.ttf",
     "index.html": "/react-quiz/index.html",
+    "static/media/plus.svg": "/react-quiz/static/media/plus.216b7aa4394a1421fe4b2bebe8f93039.svg",
     "static/media/closeIcon.svg": "/react-quiz/static/media/closeIcon.311c5816ebeb23cb3419ef2192c08b40.svg",
     "static/media/sidebarIcon.svg": "/react-quiz/static/media/sidebarIcon.c84e21f0b50e34cde75f9d125676bbfc.svg",
-    "main.2bf67b78.css.map": "/react-quiz/static/css/main.2bf67b78.css.map",
-    "main.6b7d1da3.js.map": "/react-quiz/static/js/main.6b7d1da3.js.map",
-    "702.15416bb8.chunk.js.map": "/react-quiz/static/js/702.15416bb8.chunk.js.map",
-    "283.d2ad78fe.chunk.js.map": "/react-quiz/static/js/283.d2ad78fe.chunk.js.map",
-    "352.4d0e8691.chunk.js.map": "/react-quiz/static/js/352.4d0e8691.chunk.js.map",
-    "249.2bd28269.chunk.js.map": "/react-quiz/static/js/249.2bd28269.chunk.js.map",
+    "main.e8ff4586.css.map": "/react-quiz/static/css/main.e8ff4586.css.map",
+    "main.071f977b.js.map": "/react-quiz/static/js/main.071f977b.js.map",
+    "805.b2df1df2.chunk.js.map": "/react-quiz/static/js/805.b2df1df2.chunk.js.map",
+    "740.bdb8e2c2.chunk.js.map": "/react-quiz/static/js/740.bdb8e2c2.chunk.js.map",
+    "136.43ac6e52.chunk.js.map": "/react-quiz/static/js/136.43ac6e52.chunk.js.map",
+    "369.738d0c33.chunk.js.map": "/react-quiz/static/js/369.738d0c33.chunk.js.map",
     "453.e3426b48.chunk.js.map": "/react-quiz/static/js/453.e3426b48.chunk.js.map",
-    "847.5ac9605e.chunk.js.map": "/react-quiz/static/js/847.5ac9605e.chunk.js.map"
+    "150.2c144c10.chunk.js.map": "/react-quiz/static/js/150.2c144c10.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2bf67b78.css",
-    "static/js/main.6b7d1da3.js"
+    "static/css/main.e8ff4586.css",
+    "static/js/main.071f977b.js"
   ]
 }
