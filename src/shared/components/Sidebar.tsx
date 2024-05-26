@@ -13,7 +13,6 @@ const Sidebar = ({ onClose }: TSidebarProps) => {
         <div className='p-4'>
           <h2 className='text-xl font-bold mb-4'>Menu</h2>
           <ul>
-            {/* need to close the Sidebar when clicking on the current page */}
             {pages.map((page, i) => (
               <li key={i} className='mb-2'>
                 <Link to={page.link} className='block hover:text-blue-500'>
