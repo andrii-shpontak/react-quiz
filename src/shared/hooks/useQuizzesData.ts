@@ -1,6 +1,8 @@
 import type { TQuiz, TUseQuizzesDataProps } from '../types';
 import { useCallback, useEffect, useState } from 'react';
 
+import { LocalStorageKeys } from '../constants/LocalStorageKeys';
+import { LocalStorageService } from '../../services/localStorageService';
 import { RequestState } from '../constants/RequestState';
 import { quizzes } from '../data/quizzes';
 import { requestDelay } from '../helpers/randomDelay';
@@ -16,7 +18,10 @@ export function useQuizzesData({ id }: TUseQuizzesDataProps) {
         setTimeout(() => resolve(quizzes), requestDelay);
       });
 
-      setQuizzes(response);
+      const storedQuizzes = LocalStorageService.getItem(LocalStorageKeys.Quizzes);
+      const customQuizzes = storedQuizzes ? (JSON.parse(storedQuizzes) as TQuiz[]) : [];
+
+      setQuizzes([...response, ...customQuizzes]);
       setStatus(RequestState.Success);
     } catch (error) {
       console.error('Failed to fetch quizzes:', error);

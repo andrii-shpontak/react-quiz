@@ -15,6 +15,7 @@ export type TQuiz = {
   timeLimit: number;
   category: 'Frontend' | 'Backend' | 'Devops';
   difficulty: 'simple' | 'medium' | 'difficult';
+  custom: boolean;
   questions: TQuestion[];
 };
 
@@ -61,4 +62,13 @@ export type TGetQuizResultInfo = {
   percentage: number;
   correctOfAll: string;
   elapsedTime: string;
+};
+
+export type TQuizFormValues = {
+  title: string;
+  timeLimit: number;
+  category: string;
+  difficulty: string;
+  custom: boolean;
+  questions: TQuestion[];
 };

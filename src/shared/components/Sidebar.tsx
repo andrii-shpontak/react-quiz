@@ -11,11 +11,11 @@ const Sidebar = ({ onClose }: TSidebarProps) => {
           <CloseIcon className='h-8 w-8 cursor-pointer' onClick={onClose} />
         </div>
         <div className='p-4'>
-          <h2 className='text-xl font-bold mb-4'>Menu</h2>
+          <h2 className='text-2xl font-bold mb-4'>Menu</h2>
           <ul>
             {pages.map((page, i) => (
               <li key={i} className='mb-2'>
-                <Link to={page.link} className='block hover:text-blue-500'>
+                <Link to={page.link} className='block hover:text-blue-500 text-xl'>
                   {page.title}
                 </Link>
               </li>
