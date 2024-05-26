@@ -1,5 +1,15 @@
 # Getting Started with Create React App
 
+See a preview: [DEMO LINK](https://andrii-shpontak.github.io/react-quiz)
+
+To create a quiz click on the plus icon on the home page
+
+To view the list of passed tests, open the sidebar by clicking on the icon in the upper left corner of the header and click on Quiz History
+
+The results of all completed tasks are stored in Local Storage
+
+All tests you create are stored in Local Storage
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -9,7 +19,7 @@ In the project directory, you can run:
 ### `npm start`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000/react-quiz) to view it in the browser.
+Open [http://localhost:3000/react-quiz](http://localhost:3000/react-quiz) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
