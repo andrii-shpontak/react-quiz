@@ -55,3 +55,10 @@ export type TAnswersObject = {
   elapsedTime: string;
   answers: TAnswer[];
 };
+
+export type TGetQuizResultInfo = {
+  percentageColor: string;
+  percentage: number;
+  correctOfAll: string;
+  elapsedTime: string;
+};

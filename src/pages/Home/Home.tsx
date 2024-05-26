@@ -1,9 +1,9 @@
-import { Header, Loader } from '../../../shared/components';
+import { Header, Loader } from '../../shared/components';
 
 import { Link } from 'react-router-dom';
 import React from 'react';
-import { RequestState } from '../../../shared/constants/RequestState';
-import { useQuizzesData } from '../../../shared/hooks/useQuizzesData';
+import { RequestState } from '../../shared/constants/RequestState';
+import { useQuizzesData } from '../../shared/hooks/useQuizzesData';
 
 const Home: React.FC = () => {
   const { quizzesData, requestStatus } = useQuizzesData({});
