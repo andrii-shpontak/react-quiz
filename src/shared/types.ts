@@ -22,7 +22,7 @@ export type TUseQuizzesDataProps = { id?: number };
 
 export type TQuizUseDataProps = { id?: string; data: TQuiz[] };
 
-export type QuestionCardProps = {
+export type TQuestionCardProps = {
   question: TQuestion;
   questionNumber: number;
   totalQuestions: number;
