@@ -57,7 +57,7 @@ const Home: React.FC = () => {
                 <Link to={`${AbsoluteRoutes.QUIZ_PAGE}/${quiz.title}`} className='block text-blue-500 hover:underline'>
                   {quiz.title}
                 </Link>
-                <div className='absolute h-full p-1 top-0 right-0  opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-center  justify-between'>
+                <div className='absolute h-full p-1 top-0 right-0 transition-opacity flex flex-col justify-center  justify-between'>
                   <Link
                     to={`${AbsoluteRoutes.EDIT_QUIZ}/${quiz.title}`}
                     className='block text-blue-500 hover:underline'>
