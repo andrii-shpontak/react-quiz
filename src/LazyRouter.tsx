@@ -17,6 +17,7 @@ const LazyRouter: React.FC = () => {
           <Route path='/react-quiz/quiz/:id' element={<Quiz />} />
           <Route path='/react-quiz/quizzes' element={<Quizzes />} />
           <Route path='/react-quiz/create-quiz' element={<CreateQuiz />} />
+          <Route path='/react-quiz/edit/:id' element={<CreateQuiz />} />
           <Route path='/react-quiz/*' element={<Home />} />
         </Routes>
       </Suspense>

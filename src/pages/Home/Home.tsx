@@ -4,6 +4,7 @@ import { useQuizHandlers, useQuizzesData } from '../../shared/hooks';
 
 import { AbsoluteRoutes } from '../../shared/constants/AbsoluteRoutes';
 import { ReactComponent as DeleteIcon } from '../../assets/icons/delete.svg';
+import { ReactComponent as EditIcon } from '../../assets/icons/edit.svg';
 import { Link } from 'react-router-dom';
 import { ReactComponent as PlusIcon } from '../../assets/icons/plus.svg';
 import { RequestState } from '../../shared/constants/RequestState';
@@ -52,13 +53,20 @@ const Home: React.FC = () => {
             {quizzesData.map((quiz, index) => (
               <div
                 key={index}
-                className='p-4 border border-gray-300 rounded-md shadow-md transition-colors hover:bg-gray-50 relative flex justify-between'>
+                className='p-5 pr-10 border border-gray-300 rounded-md shadow-md transition-colors hover:bg-gray-50 relative group'>
                 <Link to={`${AbsoluteRoutes.QUIZ_PAGE}/${quiz.title}`} className='block text-blue-500 hover:underline'>
                   {quiz.title}
                 </Link>
-                <button data-delete={quiz.title} onClick={handleDeleteQuiz}>
-                  <DeleteIcon className='h-5 w-5' />
-                </button>
+                <div className='absolute h-full p-1 top-0 right-0  opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-center  justify-between'>
+                  <Link
+                    to={`${AbsoluteRoutes.EDIT_QUIZ}/${quiz.title}`}
+                    className='block text-blue-500 hover:underline'>
+                    <EditIcon className='h-6 w-6' />
+                  </Link>
+                  <button data-delete={quiz.title} onClick={handleDeleteQuiz}>
+                    <DeleteIcon className='h-6 w-6' />
+                  </button>
+                </div>
               </div>
             ))}
           </div>

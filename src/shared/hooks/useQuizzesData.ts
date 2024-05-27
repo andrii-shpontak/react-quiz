@@ -24,9 +24,9 @@ export function useQuizzesData({ id }: TUseQuizzesDataProps) {
       const hiddenQuizzesInStorage = LocalStorageService.getItem(LocalStorageKeys.HiddenQuizzes);
       const hiddenQuizzes = hiddenQuizzesInStorage ? (JSON.parse(hiddenQuizzesInStorage) as string[]) : [];
 
-      const quizList = [...response, ...customQuizzes].filter(quiz => !hiddenQuizzes.includes(quiz.title));
+      const filteredResponse = response.filter(quiz => !hiddenQuizzes.includes(quiz.title));
 
-      setQuizzes(quizList);
+      setQuizzes([...filteredResponse, ...customQuizzes]);
       setStatus(RequestState.Success);
     } catch (error) {
       console.error('Failed to fetch quizzes:', error);

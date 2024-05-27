@@ -1,7 +1,7 @@
-import type { TQuiz, TQuizUseDataProps } from '../../../shared/types';
+import type { TQuiz, TQuizUseDataProps } from '../types';
 import { useEffect, useState } from 'react';
 
-export function useData({ id, data }: TQuizUseDataProps) {
+export function useGetQuizByTitle({ id, data }: TQuizUseDataProps) {
   const [currentQuiz, setCurrentQuiz] = useState<TQuiz | null>(null);
 
   useEffect(() => {

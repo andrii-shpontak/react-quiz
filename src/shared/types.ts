@@ -64,15 +64,12 @@ export type TGetQuizResultInfo = {
   elapsedTime: string;
 };
 
-export type TQuizFormValues = {
-  title: string;
-  timeLimit: number;
-  category: string;
-  difficulty: string;
-  custom: boolean;
-  questions: TQuestion[];
-};
-
 export type TUseQuizHandlersProps = {
   quizzesData: TQuiz[];
+};
+
+export type TQuizFormHandlers = {
+  id?: string;
+  quizzesData: TQuiz[];
+  currentQuiz: TQuiz | null;
 };

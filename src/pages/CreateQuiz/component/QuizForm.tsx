@@ -2,10 +2,10 @@ import { ErrorMessage, Field, FieldArray, Form, useFormikContext } from 'formik'
 import { categories, difficulties } from '../../../shared/constants/quizData';
 
 import React from 'react';
-import type { TQuizFormValues } from '../../../shared/types';
+import type { TQuiz } from '../../../shared/types';
 
-const CreateForm: React.FC = () => {
-  const { values, setFieldValue } = useFormikContext<TQuizFormValues>();
+const QuizForm = ({ isEditPage }: { isEditPage: boolean }) => {
+  const { values, setFieldValue } = useFormikContext<TQuiz>();
 
   const handleAddOption = (qIndex: number, pushOption: (obj: { id: number; text: string }) => void) => {
     const newOptionId = values.questions[qIndex].options.length + 1;
@@ -160,10 +160,10 @@ const CreateForm: React.FC = () => {
         )}
       </FieldArray>
       <button type='submit' className='mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600'>
-        Create Quiz
+        {isEditPage ? 'Edit' : 'Create'} Quiz
       </button>
     </Form>
   );
 };
 
-export default CreateForm;
+export default QuizForm;

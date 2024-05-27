@@ -1,10 +1,10 @@
-import type { TQuizFormValues } from '../types';
+import type { TQuiz } from '../types';
 
 export const categories = ['Frontend', 'Backend', 'Devops'] as const;
 
 export const difficulties = ['simple', 'medium', 'difficult'] as const;
 
-export const initialValues: TQuizFormValues = {
+export const initialValues: TQuiz = {
   title: '',
   timeLimit: 1,
   category: categories[0],
