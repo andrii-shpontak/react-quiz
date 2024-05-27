@@ -10,6 +10,10 @@ The results of all completed tasks are stored in Local Storage
 
 All tests you create are stored in Local Storage
 
+When deleting default quizzes, they are added to the list of hidden Local Storage
+
+When editing default quizzes, they are added to the list hidden in Local Storage, and a new object is created in Local Storage Custom Quiz
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
