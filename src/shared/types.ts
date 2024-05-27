@@ -72,3 +72,7 @@ export type TQuizFormValues = {
   custom: boolean;
   questions: TQuestion[];
 };
+
+export type TUseQuizHandlersProps = {
+  quizzesData: TQuiz[];
+};

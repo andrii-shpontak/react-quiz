@@ -21,7 +21,12 @@ export function useQuizzesData({ id }: TUseQuizzesDataProps) {
       const storedQuizzes = LocalStorageService.getItem(LocalStorageKeys.Quizzes);
       const customQuizzes = storedQuizzes ? (JSON.parse(storedQuizzes) as TQuiz[]) : [];
 
-      setQuizzes([...response, ...customQuizzes]);
+      const hiddenQuizzesInStorage = LocalStorageService.getItem(LocalStorageKeys.HiddenQuizzes);
+      const hiddenQuizzes = hiddenQuizzesInStorage ? (JSON.parse(hiddenQuizzesInStorage) as string[]) : [];
+
+      const quizList = [...response, ...customQuizzes].filter(quiz => !hiddenQuizzes.includes(quiz.title));
+
+      setQuizzes(quizList);
       setStatus(RequestState.Success);
     } catch (error) {
       console.error('Failed to fetch quizzes:', error);
